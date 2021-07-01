@@ -10,10 +10,10 @@
  * Brute force function
  * Assume that malloced pointer will be free() by caller
  */
-int* twoSum(int* nums, int numsSize, int target, int* returnSize){
-  
-  int li_index[2];
-  memset(&li_index, 0x00, sizeof(li_index));
+int* twoSum(int* nums, int numsSize, int target, int* returnSize)
+{  
+  int* ii_index = malloc(sizeof(int)*2);
+  *returnSize = 2;
     
     for(int i=0;i<numsSize-1;i++)
     {
@@ -21,21 +21,12 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize){
         {
            if( *(nums+i) + *(nums+j) == target )
            {
-               li_index[0]=i;
-               li_index[1]=j;
+               ii_index[0]=i;
+               ii_index[1]=j;
                break;
            }
         }
     }
-    
-    
-    int* ii_return=malloc(sizeof(int)*2);
-    
-    *ii_return = li_index[0];
-    *(ii_return+1) = li_index[1];
-    
-    *returnSize = 2;
-    
-    return ii_return;
-}
 
+    return ii_index;
+}
