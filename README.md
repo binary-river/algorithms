@@ -1,2 +1,2 @@
 ###Algorithms Practices
-currnt practices : 0
+current practices : 2
