@@ -10,9 +10,6 @@
  *  input: s = "abcdefbg"
  *  output : 6 ( cdefbg is the longest substring in given string s )
  *
- * Leet code result : 
- *   Runtime :8ms
- *   Memory Usage : 5.8MB
  */
 
 int lengthOfLongestSubstring(char * s)
