@@ -24,7 +24,7 @@ int lengthOfLongestSubstring(char * s)
     int liPrgrEndIdx = 0;
     
     
-    /* interate. Length of string will be under 50000 */
+    /* iterate. Length of string will be under 50000 */
     for(int i=0; i< 50000; i++)
     {
         /* facing null */
