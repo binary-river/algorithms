@@ -1,2 +1,2 @@
-###Everyday Algorithms Practices( Not literally everyday..)
-current practices : 2
+###Everyday Algorithms Practices( Not literally everyday..) 
+current practices : 3
