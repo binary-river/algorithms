@@ -47,12 +47,13 @@ int lengthOfLongestSubstring(char * s)
         
         /* search current(i) character in on process string */
         int liPrgrCharMatchedIdx = -1;
-        for( int j=liPrgrStrtIdx; j<=liPrgrEndIdx; j++ )
+        for( int j=liPrgrEndIdx; j>=liPrgrStrtIdx; j-- )
         {
             if( *(s+j) == *(s+i) )
             {
                 /* get last index of matched char in on process string */
                 liPrgrCharMatchedIdx = j; 
+                break;
             }
         }
         
