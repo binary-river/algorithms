@@ -1,3 +1,22 @@
+/*
+ * Function Description 
+ * : Find longest palindromic substring in given string
+ * 
+ * example 1
+ * input  : abcddca
+ * output : cddc
+ *
+ * example 2
+ * input  : ab
+ * output : a
+ *
+ * constraint 
+ * 1 <= s.length <= 1000 
+ * s consist of only digits and English letter(upper/lower)
+ */
+
+
+/* Check given string is palindromic */
 int palindromeValidator(char *sOri )
 {
     int sOriLen = strlen(sOri);
@@ -13,10 +32,19 @@ int palindromeValidator(char *sOri )
     return 0;
 }
 
-/* 
- * 1 <= s.length <= 1000 
- * s consist of only digits and English letters (lower/upper)
- */
+
+/* Return longest palindromic substring
+ * How it works.
+ * 1. start from 0 index of given string
+ * 2. find substring which have same start and end character
+ * 3. check if substring found is palindromic string
+ * 4. if not, go to 2.
+ * 5. return longest palindromic substing
+ *
+ * postscript
+ * : This algorithm is intuitive and easy to comprehend, but quite slow.
+ *   You can find Another algorithm which is very fast and famous in longestPalindrome_v2.c
+ */ 
 char * longestPalindrome(char * s)
 {
     int sLen = strlen(s);
