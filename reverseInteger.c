@@ -17,9 +17,6 @@
  *  : Make sure function works in 32-bit system without overflow.
  *
  *  Post script
- *  : This function works by converting interger to string, string to integer.
- *    code is longer than the code using % and / algorithms, but it's easy to imagine
- *    Faster algorithm(using % and / ) is in reverseInteger.c
  *  : This function is shorter and slightly faster than the code converting integer to string 
  *    and string to integer.
  *    
