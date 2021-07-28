@@ -1,3 +1,3 @@
 ### Everyday Algorithms Practices( Not literally everyday..)
 
-current practices : 9
+current practices : 10
